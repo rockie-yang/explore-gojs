@@ -1,0 +1,22 @@
+{
+  "name": "explore-gojs",
+  "version": "1.0.0",
+  "description": "explore go.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockie-yang/explore-gojs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rockie-yang/explore-gojs/issues"
+  },
+  "homepage": "https://github.com/rockie-yang/explore-gojs#readme",
+  "dependencies": {
+    "gojs": "^1.8.31"
+  }
+}

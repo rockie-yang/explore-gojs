@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script src="../go.js"></script>
+    <script>
+        function init() {
+            var $ = go.GraphObject.make;
+            myDiagram = $(go.Diagram, "myDiagramDiv");
+
+            myDiagram.model = $(go.Model);
+            myDiagram.model.nodeDataArray=
+                [
+                  { key: "Alpha", color: "lightblue" },
+                  { key: "Beta", color: "orange" },
+                  { key: "Gamma", color: "lightgreen" },
+                  { key: "Delta", color: "pink" }
+                ];
+
+            myDiagram.model.linkDataArray = [
+              {from: "Alpha", to: "Beta"},
+              {from: "Alpha", to: "Gamma"},
+              {from: "Beta", to: "Gamma"}
+            ]
+             
+    }
+
+    </script>
+</head>
+<body onload="init()">
+<div id="myDiagramDiv"
+     style="width:400px; height:400px; border: solid #DAE4E4;"></div>
+
+</body>
+</html>
